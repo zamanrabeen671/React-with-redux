@@ -20,7 +20,6 @@ const Homepage = () => {
       };
 
     return (
-        <>
         <div className="home__page" style={{ display: isSignedIn ? "none" : "" }}>
           {!isSignedIn ? (
             <div className="login__message">
@@ -51,7 +50,6 @@ const Homepage = () => {
             ""
           )}
         </div>
-        </>
     );
 };
 

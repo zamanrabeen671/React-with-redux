@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { selectUserInput, setBlogData } from "../features/userSlice";
 
-import "../styling/blogs.css";
+// import "../styling/blogs.css";
 
 const Blogs = () => {
   const searchInput = useSelector(selectUserInput);
@@ -27,13 +27,13 @@ const Blogs = () => {
   }, [searchInput]);
 
   return (
-    <div className="blog__page">
+    <div className="blog__page"  data-testid="id">
       <h1 className="blog__page__header">Blogs</h1>
       {loading ? <h1 className="loading">Loading...</h1> : ""}
       <div className="blogs">
         {blogs?.articles?.map((blog) => (
-          <a className="blog" target="_blank" href={blog.url}>
-            <img src={blog.image} />
+          <a className="blog" target="_blank" href={blog.url} rel="noreferrer">
+            <img src={blog.image} alt="" />
             <div>
               <h3 className="sourceName">
                 <span>{blog.source.name}</span>
@@ -45,7 +45,7 @@ const Blogs = () => {
           </a>
         ))}
 
-        {blogs?.totalArticles == 0 && (
+        {blogs?.totalArticles === 0 && (
           <h1 className="no__blogs">
             No blogs available 😞. Search something else to read blogs on the
             greatest platform.
