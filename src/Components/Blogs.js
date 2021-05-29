@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { selectUserInput, setBlogData } from "../features/userSlice";
-
-// import "../styling/blogs.css";
+import "../styling/blogs.css";
 
 const Blogs = () => {
   const searchInput = useSelector(selectUserInput);
@@ -27,7 +26,7 @@ const Blogs = () => {
   }, [searchInput]);
 
   return (
-    <div className="blog__page"  data-testid="id">
+    <div className="blog__page" data-testid="id">
       <h1 className="blog__page__header">Blogs</h1>
       {loading ? <h1 className="loading">Loading...</h1> : ""}
       <div className="blogs">

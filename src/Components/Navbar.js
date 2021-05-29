@@ -13,7 +13,7 @@ import {
 import '../styling/navbar.css';
 
 const Navbar = () => {
-  const [inputValue, setInputValue] = useState("tech");
+  const [inputValue, setInputValue] = useState("");
   const isSignedIn = useSelector(selectSignedIn);
   const userData = useSelector(selectUserData);
 
@@ -28,7 +28,7 @@ const Navbar = () => {
     e.preventDefault();
     dispatch(setInput(inputValue));
   };
-
+ 
   return (
     <div className="navbar">
       <h1 className="navbar__header">BlogMania 💬</h1>
