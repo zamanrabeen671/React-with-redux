@@ -3,12 +3,11 @@ import React from "react";
 // import Blogs from "./Components/Blogs";
 
 import Homepage from "./Components/Homepage"
-import Testing from "./Components/testing/Testing";
 // import Homepage from "./Components/Homepage";
 
 // import Navbar from "./Components/Navbar";
 // import { selectSignedIn } from "./features/userSlice";
-// import "./styling/app.css";
+import "./styling/app.css";
 
 const App = () => {
   // const isSignedIn = useSelector(selectSignedIn);
@@ -18,7 +17,6 @@ const App = () => {
       {/* <Navbar /> */}
       <Homepage />
       {/* {isSignedIn && <Blogs />} */}
-      <Testing/>
     </div>
   );
 };
