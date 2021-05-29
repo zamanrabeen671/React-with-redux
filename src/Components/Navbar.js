@@ -10,7 +10,7 @@ import {
   setUserData,
 } from "../features/userSlice";
 
-import "../styling/navbar.css";
+import '../styling/navbar.css';
 
 const Navbar = () => {
   const [inputValue, setInputValue] = useState("tech");
