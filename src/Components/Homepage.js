@@ -6,8 +6,7 @@ import {
   setSignedIn,
   setUserData,
 } from "../features/userSlice";
-
-// import "../styling/home.css";
+import '../styling/home.css';
 
 const Homepage = () => {
       const isSignedIn = useSelector(selectSignedIn);
