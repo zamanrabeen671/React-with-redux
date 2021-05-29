@@ -1,7 +1,11 @@
 import React from "react";
 // import { useSelector } from "react-redux";
 // import Blogs from "./Components/Blogs";
-import Homepage from "./Components/Homepage";
+
+import Homepage from "./Components/Homepage"
+import Testing from "./Components/testing/Testing";
+// import Homepage from "./Components/Homepage";
+
 // import Navbar from "./Components/Navbar";
 // import { selectSignedIn } from "./features/userSlice";
 // import "./styling/app.css";
@@ -14,6 +18,7 @@ const App = () => {
       {/* <Navbar /> */}
       <Homepage />
       {/* {isSignedIn && <Blogs />} */}
+      <Testing/>
     </div>
   );
 };
