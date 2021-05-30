@@ -35,6 +35,7 @@ const Homepage = () => {
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
                     className="login__button"
+                    title="btn"
                   >
                     Login with Google
                   </button>

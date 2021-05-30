@@ -26,12 +26,12 @@ const Blogs = () => {
   }, [searchInput]);
 
   return (
-    <div className="" data-testid="id">
+    <div>
       <h1 className="blog__page__header">News</h1>
       {loading ? <h1 className="loading text-center">Loading...</h1> : ""}
       <div className="row mx-auto p-5">
-        {blogs?.articles?.map((blog) => (
-          <div className="col mb-5">
+        {blogs?.articles?.map((blog, index) => (
+          <div className="col mb-5" key={index}>
             <a className="blog" target="_blank" href={blog.url} rel="noreferrer">
             <img src={blog.image} alt="" />
             <div>
