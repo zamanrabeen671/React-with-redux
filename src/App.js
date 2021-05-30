@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Blogs from "./Components/Blogs";
 import Homepage from "./Components/Homepage"
-import Navbar from "./Components/Navbar";
+import NavbarBS from "./Components/NavbarBS";
 import { selectSignedIn } from "./features/userSlice";
 import "./styling/app.css";
 
@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <Navbar />
+      <NavbarBS />
       <Homepage />
       {isSignedIn && <Blogs />}
     </div>

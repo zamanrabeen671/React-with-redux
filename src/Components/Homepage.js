@@ -19,14 +19,14 @@ const Homepage = () => {
       };
 
     return (
-        <div className="home__page" style={{ display: isSignedIn ? "none" : "" }}>
+        <div className="home__page mx-auto" style={{ display: isSignedIn ? "none" : "" }}>
           {!isSignedIn ? (
             <div className="login__message">
               <h2>📗</h2>
               <h1>A Readers favourite place!</h1>
               <p>
-                We provide high quality online resource for reading blogs. Just sign
-                up and start reading some quality blogs.
+                We provide up-to-date hot news. Just sign
+                up and start reading.
               </p>
               <GoogleLogin
                 clientId="1038708904471-laurpo7i1lh857efa34eh92mi8sv8dsv.apps.googleusercontent.com"
