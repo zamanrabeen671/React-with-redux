@@ -5,4 +5,4 @@
     3. Search bar was implemented to search whatever news you want.
     4. User login & logout is available
 
-    Website Link: [RedNews](https://rednews.netlify.app/)
+    Website Link: [RedNews](https://rednews.netlify.app)
